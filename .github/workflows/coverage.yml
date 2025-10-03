@@ -1,0 +1,27 @@
+name: Coverage
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+      - name: Run coverage script
+        run: |
+          chmod +x ./scripts/coverage.sh
+          # exclude cmd/gitimpl from coverage and require 85%
+          ./scripts/coverage.sh 85 cmd/gitimpl
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.out

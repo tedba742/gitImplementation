@@ -1,0 +1,9 @@
+---
+applyTo: '**'
+---
+# These rules are profound and the basis for it all:
+- Always following test-drive-design.
+- Never do anything if the tests where not created first.
+- No test equals no implementation.
+- Provide explanations for TDD if it seems that TDD is not understood.
+- Tests and coverage are key and have highest priority over everything else.

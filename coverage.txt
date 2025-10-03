@@ -1,0 +1,13 @@
+github.com/tedba742/gitImplementation/cmd/gitimpl/main.go:9:		main			77.8%
+github.com/tedba742/gitImplementation/internal/object/object.go:15:	hashHeaderAndContent	100.0%
+github.com/tedba742/gitImplementation/internal/object/object.go:24:	HashData		100.0%
+github.com/tedba742/gitImplementation/internal/object/object.go:30:	WriteObject		90.9%
+github.com/tedba742/gitImplementation/internal/object/object.go:49:	ReadObject		83.3%
+github.com/tedba742/gitImplementation/internal/object/object.go:67:	HexToBytes		100.0%
+github.com/tedba742/gitImplementation/internal/repo/log.go:20:		Visualize		97.2%
+github.com/tedba742/gitImplementation/internal/repo/repo.go:16:		Checkout		81.8%
+github.com/tedba742/gitImplementation/internal/repo/repo.go:36:		Add			82.4%
+github.com/tedba742/gitImplementation/internal/repo/repo.go:65:		CreateCommit		87.3%
+github.com/tedba742/gitImplementation/internal/repo/repo.go:156:	Push			75.0%
+github.com/tedba742/gitImplementation/internal/repo/repo.go:197:	Log			95.8%
+total:									(statements)		88.7%
